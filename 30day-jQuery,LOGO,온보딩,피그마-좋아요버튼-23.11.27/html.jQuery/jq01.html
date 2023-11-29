@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제목가리기,리스트배경색주기</title>
+    <script src="./script/jquery-1.11.3.min.js"></script>
+    <script>
+    $(function(){
+    //실행문
+    $(".box").hide(); //가리기
+    $(".box").show(); //보기
+   $(".pink").css("background-color","pink") 
+   $(".skyblue").css("background-color","skyblue") 
+});
+
+    </script>
+</head>
+<body>
+    <div class="box">내가 좋아하는 음식</div>
+    <ul>
+        <li>국수</li>
+        <li class="pink">블루베리</li>
+        <li>요거트</li>
+        <li class="skyblue">삼겹살</li>
+        <li>각김치</li>
+    </ul>
+    
+</body>
+</html>

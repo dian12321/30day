@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script/jquery-1.11.3.min.js">
+
+    </script>
+    <script>
+        $(function () {
+            $(".box").click(function () {
+                $(".box").animate({top: '450px'},1500)
+
+            });
+
+        });
+    </script>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            background-color: #069;
+            position: absolute;
+            left: 30px;
+            top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- .box{box} -->
+    <div class="box">box</div>
+</body>
+
+</html>

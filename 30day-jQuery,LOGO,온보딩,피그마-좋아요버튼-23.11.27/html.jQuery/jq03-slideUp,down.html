@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script/jquery-1.11.3.min.js"></script>
+    <script>
+        $(function(){
+            $(".slide1").hide(); //가리기
+            $(".slide1").slideDown(1200); //서서히 내려옴
+            $(".slide2").slideUp(1200); //서서히 올라감
+        });
+    </script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-size: 8em;
+            font-family: Arial;
+        }
+
+        #box {
+            width: 900px;
+            height: 150px;
+        }
+
+        #box .slide1 {
+            background-color: #f90;
+        }
+
+        #box .slide2 {
+            background-color: #09f;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- #box>.slide$* -->
+    <div id="box">
+        <div class="slide1">slide down</div>
+    </div>
+    <div id="box">
+        <div class="slide2">slide up</div>
+    </div>
+</body>
+
+</html>
